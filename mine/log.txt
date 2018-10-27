@@ -1,0 +1,11 @@
+打包git提交文件
+
+把新增加的文件使用git add添加进改动
+
+使用git commit提交改动
+
+使用git log查看提交的commit id
+
+使用命令
+git diff-tree -r --no-commit-id --name-only d18f9d5f17e190cfbb836a4acff2d96c0d466a2c | xargs tar -rf mytarfile.tar
+把修改的文件打包
