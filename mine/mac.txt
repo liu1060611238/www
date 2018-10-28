@@ -1,0 +1,5 @@
+
+
+lsof -i tcp:port  （port替换成端口号，比如6379）
+
+查找文件 find ./ -iname "*.conf"

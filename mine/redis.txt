@@ -1,0 +1,30 @@
+
+=====================================
+MAMP下编译php7-redis扩展
+
+编译之前先安装autoconf
+
+执行brew install autoconf安装
+
+下载phpredis文件
+终端命令3 : git clone https://github.com/nicolasff/phpredis.git
+
+下载完成 进入phpredis文件夹
+
+终端命令4 : cd phpredis
+
+终端命令5 :/Applications/MAMP/bin/php/php7.1.20/bin/phpize
+
+终端命令6 :./configure --with-php-config=/Applications/MAMP/bin/php/php7.1.20/bin/php-config
+
+终端命令7 :make
+
+phpredis/modules下会生成redis.so，
+把它复制到/Applications/MAMP/bin/php/php7.1.20/lib/php/extensions/no-debug-non-zts20131226
+这个目录下ßß
+
+修改php.ini配置 extension=redis.so
+=========================================
+
+
+
